@@ -1,0 +1,191 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../dss/fonts/Roboto_Mono/static/RobotoMono-ExtraLight.ttf') format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../dss/fonts/Roboto_Mono/static/RobotoMono-Light.ttf') format('truetype');
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../dss/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../dss/fonts/Roboto_Mono/static/RobotoMono-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../dss/fonts/Roboto_Mono/static/RobotoMono-Bold.ttf') format('truetype');
+    font-weight: 900;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0; 
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+    font-family: Roboto;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+a:hover {
+    font-weight: 400;
+}
+
+
+.head-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head-container .logo {
+   margin-left: 50px;
+}
+
+.logo img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;   
+}
+
+.head-container .main-menu li {
+    display: inline-block;
+    margin-right: 50px;
+    font-size: 20px;  
+}
+
+.main-screen .main-image {
+    background-image: url('../dss/images/main-section/main.jpeg');
+    background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.main-screen .main-container {
+    padding: 200px 50px;
+}
+
+.main-screen .main-container p {
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+}
+
+.main-screen .main-container button {
+    margin-top: 50px;
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    border: 1px solid #f5f5f5;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.services {
+    margin: 50px 50px;
+}
+
+.services h2 {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.services .services-list {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+
+}
+
+.services .services-list div {
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.6s ease-out;
+    transform: scale(1);
+
+}
+
+.services .services-list div:hover {
+    transform: scale(1.1);
+}
+
+.services .services-list div p {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+.services .services-list img {
+    width: 150px;
+}
+
+footer {
+    margin: 150px 100px 20px 100px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer-nav .address {
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.footer-nav .address img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-down {
+    margin-top: 50px;
+    font-size: 14px;
+
+}
