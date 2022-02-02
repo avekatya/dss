@@ -42,9 +42,44 @@
         </div>
     </header>
     <main>
-        <section class="contacts-main">
+        <section class="contacts-pic">
             <div class="contacts-image">
-                <p>Контакты</p>
+            </div>
+        </section>
+        <section class="contacts-main">
+            <h2>Контакты</h2>
+            <div class="contacts-container">
+                <div class="contacts-address">
+                    <h3>Наш офис</h3>
+                    <ul>
+                        <li>220007 РБ, Минск</li>
+                        <li>ул.Могилевская, д.28, оф.17</li>
+                        <li>тел.: <a href="tel:+375296688058">+375296688058</a></li>
+                        <li>тел.: <a href="tel:+375296659733">+375296659733</a></li>
+                        <li>эл. почта: <a href="mailto:dss_2003@tut.by">dss_2003@tut.by</a></li>
+                    </ul>
+                </div>
+                <div class="contacts-form">
+                    <h3>Свяжитесь с нами</h3>
+                    <form action="mailto:katyaaverchenko@gmail.com" method="post">
+                        <!-- <label for="fname">Имя</label> -->
+                        <ul>
+                        <li><input type="text" id="fname" name="fname" placeholder="Имя" required></li>
+                        <!-- <label for="email">Электронная почта</label> -->
+                        <li><input type="email" id="email" name="mail" placeholder="Электронная почта" required></li>
+                        <!-- <label for="phone">Телефон</label> -->
+                        <li><input type="tel" id="phone" name="phone" placeholder="Мобильный телефон" required></li>
+                        <!-- <label for="message">Сообщение</label> -->
+                        <li><textarea id="message" name="message" placeholder="Сообщение" required></textarea></li>
+                        <li><input type="submit" value="Отправить"></li>
+                        </ul>
+                      </form>
+                </div>
+            </div>
+        </section>
+        <section class="contacts-map">
+            <div class="map">
+                <iframe src="https://yandex.com/map-widget/v1/?um=constructor%3A3ea3b4b5141820849af18e276be6ac94929f0a42643876548f87236735073066&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
             </div>
         </section>
     </main>

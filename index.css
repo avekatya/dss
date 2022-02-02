@@ -160,7 +160,8 @@ a:hover {
     margin: 50px 50px;
 }
 
-.services h2 {
+/* .services */
+h2 {
     font-family: Roboto;
     font-weight: 400;
     font-size: 35px;
