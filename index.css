@@ -28,11 +28,19 @@
     font-weight: 900;
 }
 
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../dss/fonts/Ubuntu_Mono/UbuntuMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0; 
 }
+
+
 
 html {
 scroll-behavior: smooth;
@@ -45,6 +53,8 @@ body {
     margin: 0;
     background-color: #f5f5f5;
 }
+
+
 
 ul {
     list-style: none;
@@ -78,9 +88,29 @@ a:hover {
 }
 
 .head-container .main-menu li {
+    position: relative;
     display: inline-block;
     margin-right: 50px;
     font-size: 20px;  
+}
+
+.main-menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    font-size: 0.8em;
+    padding: 12px 16px;
+    display: block;
+  }
+
+  .head-container .main-menu li:hover .dropdown-content {
+    display: block;
 }
 
 .main-screen .main-image {
@@ -97,21 +127,33 @@ a:hover {
 }
 
 .main-screen .main-container p {
+    font-family: Ubuntu;
     letter-spacing: 2px;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 45px;
     color: white;
+    /* text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; */
 }
 
 .main-screen .main-container button {
-    margin-top: 50px;
-    color: white;
+    margin-top: 70px;
     font-family: Roboto;
     font-size: 20px;
-    font-weight: 400;
-    border: 1px solid #f5f5f5;
-    padding: 5px;
-    background-color: transparent;
+    font-weight: 200;
+    color:#000000;
+    border: none;
+    padding: 7px;
+    background-color:rgba(255,255,255,0.8);
+    position: relative;
+    z-index: 2;
+    transition: transform 0.6s ease-out;
+    transform: scale(1);
+    
+}
+
+.main-screen .main-container button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .services {
@@ -135,7 +177,7 @@ a:hover {
 }
 
 .services .services-list div {
-    padding: 2px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
     column-gap: 20px;
@@ -149,6 +191,8 @@ a:hover {
 
 .services .services-list div:hover {
     transform: scale(1.1);
+    background-color: white;
+    font-weight: 400;
 }
 
 .services .services-list div p {
@@ -169,7 +213,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .footer-nav .address {
@@ -179,7 +222,7 @@ footer {
     align-items: center;
 }
 
-.footer-nav .address img {
+.footer-nav .socials img, .footer-nav .address img {
     width: 25px;
     height: 25px;
 }
@@ -187,5 +230,25 @@ footer {
 .footer-down {
     margin-top: 50px;
     font-size: 14px;
+}
+
+.footer-down ul {
+    border-top: 1px solid #000000;
+}
+
+
+@media only screen and (min-width: 1720px) {
+    header {
+        margin: 0 10%;
+    }
+    .services {
+        margin: 50px 10%;
+    }
+    footer {
+        margin: 50px 10%;
+    }
+    .main-screen .main-container {
+        padding: 200px 13%;
+    }
 
 }

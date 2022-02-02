@@ -1,0 +1,8 @@
+.contacts-main .contacts-image {
+    background-image: url('../dss/images/main-section/main.jpeg');
+    background-size: cover;
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
