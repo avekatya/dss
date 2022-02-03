@@ -1,0 +1,32 @@
+h4 {
+    font-family: Roboto;
+    font-weight: 200;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.section-blog {
+    padding: 50px 0; 
+    margin: 0 10%;
+}
+
+.grid {
+    display: grid; 
+}
+
+.blog-wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+}
+
+.blog-item-img {
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-item-content {
+    text-align: center;
+    align-content: flex-start;
+}

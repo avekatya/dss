@@ -27,6 +27,7 @@ h3 {
 }
 
 input {
+    padding: 5px;
     height: 40px;
     width: 500px;
     margin-bottom: 10px;
